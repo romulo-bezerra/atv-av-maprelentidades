@@ -48,11 +48,14 @@ public class Inserir {
         navio = new Navio("Titanic", Capacidade.GRANDEPORTE, Pais.BRASIL);
 
         navio.setComandante(comandante);
-        navio.setTransporte(transporte);
+        navio.addTrasportes(transporte);
 
         comandante.addNavios(navio);
+
         transporte.setNavio(navio);
         transporte.setCarga(carga);
+
+        produto.addCargas(carga);
 
         carga.setTransporte(transporte);
         carga.addProdutos(produto);

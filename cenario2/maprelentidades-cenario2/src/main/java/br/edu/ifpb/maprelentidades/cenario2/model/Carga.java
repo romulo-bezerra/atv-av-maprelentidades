@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
@@ -30,7 +31,7 @@ public class Carga implements Serializable {
     @OneToOne
     private Transporte transporte;
 
-    @OneToMany
+    @ManyToMany(mappedBy = "cargas")
     private List<Produto> produtos;
 
     public Carga() {

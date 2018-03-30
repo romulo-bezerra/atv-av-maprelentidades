@@ -3,6 +3,8 @@ package br.edu.ifpb.maprelentidades.cenario2.model;
 import br.edu.ifpb.maprelentidades.cenario2.model.enums.Pais;
 import br.edu.ifpb.maprelentidades.cenario2.model.enums.Capacidade;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -10,7 +12,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -32,8 +34,8 @@ public class Navio implements Serializable {
     @Enumerated(EnumType.STRING)
     private Pais pais;
 
-    @OneToOne
-    private Transporte transporte;
+    @OneToMany
+    private List<Transporte> transportes;
 
     @ManyToOne
     private Comandante comandante;
@@ -45,6 +47,7 @@ public class Navio implements Serializable {
         this.nome = nome;
         this.capacidade = capacidade;
         this.pais = pais;
+        this.transportes = new ArrayList<>();
     }
 
     public int getCodNavio() {
@@ -79,12 +82,12 @@ public class Navio implements Serializable {
         this.pais = pais;
     }
 
-    public Transporte getTransporte() {
-        return transporte;
+    public List<Transporte> getTransportes() {
+        return transportes;
     }
 
-    public void setTransporte(Transporte transporte) {
-        this.transporte = transporte;
+    public void setTransportes(List<Transporte> transportes) {
+        this.transportes = transportes;
     }
 
     public Comandante getComandante() {
@@ -93,5 +96,9 @@ public class Navio implements Serializable {
 
     public void setComandante(Comandante comandante) {
         this.comandante = comandante;
+    }
+
+    public boolean addTrasportes(Transporte transporte) {
+        return transportes.add(transporte);
     }
 }

@@ -8,6 +8,7 @@ import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 /**
@@ -30,7 +31,7 @@ public class Transporte implements Serializable {
     @OneToOne
     private Carga carga;
 
-    @OneToOne
+    @ManyToOne
     private Navio navio;
 
     public Transporte() {

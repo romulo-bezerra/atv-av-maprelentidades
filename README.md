@@ -20,13 +20,17 @@
 
 > 4. Após o passo 3, espere mais alguns segundos 
 
-> 5. A aplicação foi implantada e os efeitos dela foram salvos: *persistência de um transporte com uma carga de Cajazeiras a João Pessoa, em 23 de outubro com o valor de R$ 2.500, em um Navio comandado por Capitão Jack Sparrow*
+> 5. A aplicação foi implantada
 
-> 6. Para ter acesso ao Banco de Dados (``PostgreSQL``) gerenciado pelo ``Docker`` e verificar a persistência, digite no terminal ``docker exec -it banco /bin/bash`` para ter acesso ao container do banco que foi configurado.
+> 6. Acesse a ``URL`` da [Página Inicial](http://localhost:8081/maprelentidades-cenario2/) para a tarefa agendada ser persistida: *persistência de um transporte com uma carga de Cajazeiras a João Pessoa, em 23 de outubro com o valor de R$ 2.500, em um Navio comandado por Capitão Jack Sparrow*
 
-> 7. Para acessar o database que foi definido, ainda no terminal digite: ``psql -U postgres mapreldois``
+> 7. Os dados foram persistidos pela aplicação
 
-> 8. Com o acesso ao banco, digite no terminal o **script** ``SELECT * FROM transporte;`` para checar as informações de transporte persistidas. 
+> 8. Para ter acesso ao Banco de Dados (``PostgreSQL``) gerenciado pelo ``Docker`` e verificar a persistência, digite no terminal ``docker exec -it banco /bin/bash`` para ter acesso ao container do banco que foi configurado.
+
+> 9. Para acessar o database que foi definido, ainda no terminal digite: ``psql -U postgres mapreldois``
+
+> 10. Com o acesso ao banco, digite no terminal o **script** ``SELECT * FROM transporte;`` para checar as informações de transporte persistidas. 
 
 ##### Instruções para Desimplantação 
 

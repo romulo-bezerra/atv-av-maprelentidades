@@ -5,15 +5,16 @@ import br.edu.ifpb.maprelentidades.cenario2.model.Transporte;
 import br.edu.ifpb.maprelentidades.cenario2.model.enums.Capacidade;
 import br.edu.ifpb.maprelentidades.cenario2.model.enums.Pais;
 import javax.annotation.Generated;
+import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-03-30T17:06:57")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-03-30T19:42:38")
 @StaticMetamodel(Navio.class)
 public class Navio_ { 
 
     public static volatile SingularAttribute<Navio, Integer> codNavio;
-    public static volatile SingularAttribute<Navio, Transporte> transporte;
+    public static volatile ListAttribute<Navio, Transporte> transportes;
     public static volatile SingularAttribute<Navio, Comandante> comandante;
     public static volatile SingularAttribute<Navio, Capacidade> capacidade;
     public static volatile SingularAttribute<Navio, String> nome;
