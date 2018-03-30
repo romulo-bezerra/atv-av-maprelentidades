@@ -1,14 +1,14 @@
-package br.edu.ifpb.maprelentidades.inserir;
+package br.edu.ifpb.maprelentidades.cenario2.inserir;
 
-import br.edu.ifpb.maprelentidades.interfaces.DaoInserir;
-import br.edu.ifpb.maprelentidades.model.Carga;
-import br.edu.ifpb.maprelentidades.model.Comandante;
-import br.edu.ifpb.maprelentidades.model.Navio;
-import br.edu.ifpb.maprelentidades.model.Produto;
-import br.edu.ifpb.maprelentidades.model.Transporte;
-import br.edu.ifpb.maprelentidades.model.enuns.Capacidade;
-import br.edu.ifpb.maprelentidades.model.enuns.Categoria;
-import br.edu.ifpb.maprelentidades.model.enuns.Pais;
+import br.edu.ifpb.maprelentidades.cenario2.interfaces.DaoInserir;
+import br.edu.ifpb.maprelentidades.cenario2.model.Carga;
+import br.edu.ifpb.maprelentidades.cenario2.model.Comandante;
+import br.edu.ifpb.maprelentidades.cenario2.model.Navio;
+import br.edu.ifpb.maprelentidades.cenario2.model.Produto;
+import br.edu.ifpb.maprelentidades.cenario2.model.Transporte;
+import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Capacidade;
+import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Categoria;
+import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Pais;
 import java.time.LocalDate;
 import java.time.Month;
 import javax.annotation.PostConstruct;

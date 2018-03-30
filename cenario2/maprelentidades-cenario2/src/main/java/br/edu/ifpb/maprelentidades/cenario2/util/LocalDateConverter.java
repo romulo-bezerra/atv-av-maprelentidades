@@ -1,4 +1,4 @@
-package br.edu.ifpb.maprelentidades.util;
+package br.edu.ifpb.maprelentidades.cenario2.util;
 
 import java.sql.Date;
 import java.time.LocalDate;

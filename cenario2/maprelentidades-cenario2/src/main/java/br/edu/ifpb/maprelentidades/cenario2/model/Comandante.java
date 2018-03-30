@@ -1,6 +1,6 @@
-package br.edu.ifpb.maprelentidades.model;
+package br.edu.ifpb.maprelentidades.cenario2.model;
 
-import br.edu.ifpb.maprelentidades.model.enuns.Pais;
+import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Pais;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

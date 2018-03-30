@@ -1,4 +1,4 @@
-package br.edu.ifpb.maprelentidades.model.enuns;
+package br.edu.ifpb.maprelentidades.cenario2.model.enuns;
 
 /**
  *

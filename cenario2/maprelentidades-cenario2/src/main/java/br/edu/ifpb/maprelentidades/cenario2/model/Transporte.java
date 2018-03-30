@@ -1,6 +1,6 @@
-package br.edu.ifpb.maprelentidades.model;
+package br.edu.ifpb.maprelentidades.cenario2.model;
 
-import br.edu.ifpb.maprelentidades.util.LocalDateConverter;
+import br.edu.ifpb.maprelentidades.cenario2.util.LocalDateConverter;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;

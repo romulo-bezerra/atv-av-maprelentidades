@@ -1,4 +1,4 @@
-package br.edu.ifpb.maprelentidades.model;
+package br.edu.ifpb.maprelentidades.cenario2.model;
 
 import java.io.Serializable;
 import javax.persistence.Column;
