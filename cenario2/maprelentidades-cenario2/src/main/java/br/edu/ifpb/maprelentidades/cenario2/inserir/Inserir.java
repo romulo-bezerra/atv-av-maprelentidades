@@ -43,7 +43,7 @@ public class Inserir {
 
         comandante = new Comandante("Capitão Jack Sparrow", Pais.BRASIL);
 
-        transporte = new Transporte(LocalDate.of(2017, Month.OCTOBER, 23), 2500D, carga);
+        transporte = new Transporte(LocalDate.of(2017, Month.OCTOBER, 23), 2500D);
 
         navio = new Navio("Titanic", Capacidade.GRANDEPORTE, Pais.BRASIL);
 
@@ -51,9 +51,12 @@ public class Inserir {
         navio.setTransporte(transporte);
 
         comandante.addNavios(navio);
-        transporte.addProdutos(produto);
-        transporte.addProdutos(produto2);
         transporte.setNavio(navio);
+        transporte.setCarga(carga);
+
+        carga.setTransporte(transporte);
+        carga.addProdutos(produto);
+        carga.addProdutos(produto2);
 
         daoInserir.cadastrarCarga(carga);
         daoInserir.cadastrarProduto(produto);

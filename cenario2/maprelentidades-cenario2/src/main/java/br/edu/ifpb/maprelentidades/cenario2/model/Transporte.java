@@ -3,14 +3,11 @@ package br.edu.ifpb.maprelentidades.cenario2.model;
 import br.edu.ifpb.maprelentidades.cenario2.util.LocalDateConverter;
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 /**
@@ -33,20 +30,15 @@ public class Transporte implements Serializable {
     @OneToOne
     private Carga carga;
 
-    @OneToMany
-    private List<Produto> produtos;
-
     @OneToOne
     private Navio navio;
 
     public Transporte() {
     }
 
-    public Transporte(LocalDate data, double valor, Carga carga) {
+    public Transporte(LocalDate data, double valor) {
         this.data = data;
         this.valor = valor;
-        this.carga = carga;
-        this.produtos = new ArrayList<>();
     }
 
     public int getId() {
@@ -81,14 +73,6 @@ public class Transporte implements Serializable {
         this.carga = carga;
     }
 
-    public List<Produto> getProdutos() {
-        return produtos;
-    }
-
-    public void setProdutos(List<Produto> produtos) {
-        this.produtos = produtos;
-    }
-
     public Navio getNavio() {
         return navio;
     }
@@ -96,9 +80,4 @@ public class Transporte implements Serializable {
     public void setNavio(Navio navio) {
         this.navio = navio;
     }
-
-    public boolean addProdutos(Produto produto) {
-        return produtos.add(produto);
-    }
-
 }
