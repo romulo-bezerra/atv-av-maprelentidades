@@ -8,7 +8,7 @@ import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-03-30T15:37:10")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-03-30T17:06:57")
 @StaticMetamodel(Navio.class)
 public class Navio_ { 
 
