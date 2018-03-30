@@ -8,6 +8,7 @@ package br.edu.ifpb.maprelentidades.cenario1.model;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -25,10 +26,9 @@ public class Participacao implements Serializable {
     @Id
     @GeneratedValue
     private int id;
+    @Column(nullable = false)
     private int nota;
 
-    @OneToOne
-    private Evento evento;
     @OneToMany
     private List<Ator> atores;
     @OneToMany
@@ -39,9 +39,8 @@ public class Participacao implements Serializable {
         this.filmes = new ArrayList<>();
     }
 
-    public Participacao(int nota, Evento evento) {
+    public Participacao(int nota) {
         this.nota = nota;
-        this.evento = evento;
     }
 
     public int getId() {
@@ -58,14 +57,6 @@ public class Participacao implements Serializable {
 
     public void setNota(int nota) {
         this.nota = nota;
-    }
-
-    public Evento getEvento() {
-        return evento;
-    }
-
-    public void setEvento(Evento evento) {
-        this.evento = evento;
     }
 
     public List<Ator> getAtores() {

@@ -6,10 +6,13 @@
 package br.edu.ifpb.maprelentidades.cenario1.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -21,12 +24,15 @@ public class Evento implements Serializable {
     @Id
     @GeneratedValue
     private int codigo;
+    @Column(length = 100, nullable = false)
     private String nome;
+    @Column(nullable = false, length = 100)
     private String local;
+    @Column(nullable = false)
     private int ano;
 
-    @OneToOne
-    private Participacao participacao;
+    @OneToMany
+    private List<Participacao> participacoes;
 
     public Evento() {
 
@@ -36,6 +42,7 @@ public class Evento implements Serializable {
         this.nome = nome;
         this.local = local;
         this.ano = ano;
+        this.participacoes = new ArrayList<>();
     }
 
     public int getCodigo() {
@@ -70,12 +77,20 @@ public class Evento implements Serializable {
         this.ano = ano;
     }
 
-    public Participacao getParticipacao() {
-        return participacao;
+    public List<Participacao> getParticipacoes() {
+        return participacoes;
     }
 
-    public void setParticipacao(Participacao participacao) {
-        this.participacao = participacao;
+    public void setParticipacoes(List<Participacao> participacoes) {
+        this.participacoes = participacoes;
+    }
+
+    public boolean addParticipacao(Participacao participacao) {
+        return this.participacoes.add(participacao);
+    }
+
+    public boolean remParticipacao(Participacao participacao) {
+        return this.participacoes.remove(participacao);
     }
 
 }

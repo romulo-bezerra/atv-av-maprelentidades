@@ -24,9 +24,9 @@ public class App {
 
         Evento evento1 = new Evento("Evento 1", "Local Evento1", 2018);
 
-        Participacao participacao1 = new Participacao(8, evento1);
+        Participacao participacao1 = new Participacao(8);
 
-        evento1.setParticipacao(participacao1);
+        evento1.addParticipacao(participacao1);
 
         Filme filme1 = new Filme("Filme A", Genero.ACAO,
                 "Diretor A", 2018, participacao1);
