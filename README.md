@@ -2,7 +2,15 @@
 
 ### Dupla: ``Jozimar Soares`` e ``Rômulo Soares``
 
-Instruções para Implantação 
+### Instruções para Implantação
+
+#### Cenário 1 - ``NÃO TEM IMPLANTAÇÃO``
+
+> 1. Acesse o arquivo ``der-cenario1.png`` no diretório ``/atv-av-maprelentidades/cenario1`` para vizualizar o **DER** do dóminio de negócio.
+
+> 2. Para obter acesso ao mapeamento reflexo do **DER** com **JPA**, abra o projeto ``maprelentidades-cenario1`` no diretório ``/atv-av-maprelentidades/cenario1`` e acesse as classes no diretório ``/atv-av-maprelentidades/cenario1/maprelentidades-cenario1/src/main/java/br/edu/ifpb/maprelentidades/cenario1``.
+
+#### Cenário 2  
 
 > 1. Execute o arquivo ``sh`` **run.sh** no terminal
 
