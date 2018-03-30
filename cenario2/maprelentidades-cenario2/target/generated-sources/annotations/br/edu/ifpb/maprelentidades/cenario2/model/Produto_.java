@@ -1,6 +1,6 @@
 package br.edu.ifpb.maprelentidades.cenario2.model;
 
-import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Categoria;
+import br.edu.ifpb.maprelentidades.cenario2.model.enums.Categoria;
 import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;

@@ -1,6 +1,6 @@
 package br.edu.ifpb.maprelentidades.cenario2.model;
 
-import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Categoria;
+import br.edu.ifpb.maprelentidades.cenario2.model.enums.Categoria;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;

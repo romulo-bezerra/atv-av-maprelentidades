@@ -1,7 +1,7 @@
 package br.edu.ifpb.maprelentidades.cenario2.model;
 
 import br.edu.ifpb.maprelentidades.cenario2.model.Navio;
-import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Pais;
+import br.edu.ifpb.maprelentidades.cenario2.model.enums.Pais;
 import javax.annotation.Generated;
 import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;

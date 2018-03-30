@@ -2,8 +2,8 @@ package br.edu.ifpb.maprelentidades.cenario2.model;
 
 import br.edu.ifpb.maprelentidades.cenario2.model.Comandante;
 import br.edu.ifpb.maprelentidades.cenario2.model.Transporte;
-import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Capacidade;
-import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Pais;
+import br.edu.ifpb.maprelentidades.cenario2.model.enums.Capacidade;
+import br.edu.ifpb.maprelentidades.cenario2.model.enums.Pais;
 import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;

@@ -16,7 +16,6 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
@@ -40,14 +39,12 @@ public class Ator implements Serializable {
     private Nacionalidade nacionalidade;
 
     @ManyToMany
-    @JoinColumn(nullable = false)
     private List<Filme> filmesEstrelantes;
 
     @ManyToMany
     private List<ParRomantico> paresRomanticos;
 
     @ManyToOne
-    @JoinColumn(nullable = false)
     private Participacao participacao;
 
     public Ator() {

@@ -1,7 +1,7 @@
 package br.edu.ifpb.maprelentidades.cenario2.model;
 
-import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Pais;
-import br.edu.ifpb.maprelentidades.cenario2.model.enuns.Capacidade;
+import br.edu.ifpb.maprelentidades.cenario2.model.enums.Pais;
+import br.edu.ifpb.maprelentidades.cenario2.model.enums.Capacidade;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
